@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* globals.css */
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-source-sans: 'Source Sans 3', sans-serif;
+}
+
+body {
+  font-family: var(--font-source-sans);
+}
+
+h1, h2, h3, .heading {
+  font-family: var(--font-playfair);
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
