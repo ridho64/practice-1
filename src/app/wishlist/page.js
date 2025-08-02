@@ -30,7 +30,7 @@ export default function WishlistPage() {
       ) : wishlist.length === 0 ? (
         <div className="text-center py-32">
           <p className="text-lg text-gray-500 mb-6">
-            You haven’t added anything yet.
+            You havent added anything yet.
           </p>
           <Link
             href="/products"

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
     Instagram,
     Twitter,
@@ -20,10 +21,10 @@ import {
           <div>
             <h4 className="font-semibold mb-2 tracking-wide">Shop</h4>
             <ul className="space-y-1 text-gray-300">
-              <li><a href="/products" className="hover:text-white">All Products</a></li>
-              <li><a href="/men" className="hover:text-white">Men</a></li>
-              <li><a href="/women" className="hover:text-white">Women</a></li>
-              <li><a href="/accessories" className="hover:text-white">Accessories</a></li>
+              <li><Link href="/products" className="hover:text-white">All Products</Link></li>
+              <li><Link href="/men" className="hover:text-white">Men</Link></li>
+              <li><Link href="/women" className="hover:text-white">Women</Link></li>
+              <li><Link href="/accessories" className="hover:text-white">Accessories</Link></li>
             </ul>
           </div>
   

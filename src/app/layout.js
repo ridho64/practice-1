@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -26,7 +26,6 @@ const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
 });
 
-
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const user = useUser();
@@ -48,7 +47,12 @@ export default function RootLayout({ children }) {
       <body>
         <MergeGuestCartOnLogin />
         <MergeGuestWishlistOnLogin />
-        <Navbar />
+
+        {/* ✅ Wrap Navbar in Suspense */}
+        <Suspense fallback={<div>Loading navigation...</div>}>
+          <Navbar />
+        </Suspense>
+
         {children}
         <Footer />
       </body>

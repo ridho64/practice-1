@@ -53,7 +53,7 @@ export default function HomePage() {
             Featured Picks
           </h2>
           <p className="text-gray-500 text-center mb-10">
-            Handpicked essentials you'll love
+            Handpicked essentials you will love
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
             {products.slice(0, 4).map((product) => (
@@ -87,7 +87,7 @@ export default function HomePage() {
             Trending Now
           </h2>
           <p className="text-gray-500 text-center mb-10">
-            See what’s making waves this season
+             See what is making waves this season
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {products.slice(4, 10).map((product) => (
